@@ -6,11 +6,11 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f5f7fa;
+      background-color: #e8ebee;
       color: #333;
-      padding: 20px;
       display: flex;
       justify-content: center;
+      flex-direction: column;
       align-items: center;
       min-height: 100vh;
     }
@@ -18,6 +18,7 @@
     .container {
       max-width: 500px;
       margin: auto;
+      margin-top: 40px;
       background: #fff;
       padding: 30px;
       border-radius: 12px;
@@ -113,6 +114,21 @@
       background-color: #ffa8a8;
       border-left: 5px solid #fa5252;
     }
+    .banner {
+        width: 100%;
+        max-height: 150px;
+        overflow: hidden;
+        background-color: #51cf66;
+
+    }
+
+    .banner img {
+        display: block;
+        width: 100%;
+        object-position: center;
+        height: 100%;
+        object-fit: cover;
+    }
 
     @media (max-width: 768px) {
       .container {
@@ -156,5 +172,8 @@
       }
       .info {
         font-size: 14px;
+      }
+      .banner{
+        background-image: url(./Asstes/imgs/original.jpg);
       }
     }
